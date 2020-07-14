@@ -9,8 +9,9 @@ edition = "2018"
 [dependencies.sqlx]
 git = "https://github.com/launchbadge/sqlx"
 default_features = false
-features = ["all", "runtime-async-std"]
+features = ["all", "runtime-tokio"]
 
 [dependencies]
-async-std = { version = "1.6", features = ["attributes"] }
+#async-std = { version = "1.6", features = ["attributes"] }
+tokio = { version = "0.2", features = ["rt-threaded", "macros"] }
 anyhow = "1"
