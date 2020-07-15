@@ -12,6 +12,8 @@ default_features = false
 features = ["all", "runtime-tokio"]
 
 [dependencies]
-#async-std = { version = "1.6", features = ["attributes"] }
 tokio = { version = "0.2", features = ["rt-threaded", "macros"] }
+tokio-postgres = "*"
 anyhow = "1"
+rusqlite = "0.23"
+bytes = "0.5"
